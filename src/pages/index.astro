@@ -1,0 +1,23 @@
+---
+import '@/styles/globals.css';
+import Layout from '../layouts/Layout.astro';
+import { NavigationHeader } from '@/components/ui/navigation-header';
+import { HeroSection } from '@/components/home/hero';
+import { LogoCloud } from '@/components/home/logo-cloud';
+import { Features } from '@/components/home/features';
+import { Showcase } from '@/components/home/showcase';
+import { Testimonials } from '@/components/home/testimonials';
+import { CTASection } from '@/components/home/cta';
+---
+
+<Layout title="PeopleFirst - Modern HR Platform">
+  <NavigationHeader client:load />
+  <main>
+    <HeroSection client:load />
+    <LogoCloud client:load />
+    <Features client:load />
+    <Showcase client:load />
+    <Testimonials client:load />
+    <CTASection client:load />
+  </main>
+</Layout>

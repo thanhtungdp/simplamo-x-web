@@ -1,0 +1,13 @@
+---
+import '@/styles/globals.css';
+import Layout from '../layouts/Layout.astro';
+import { NavigationHeader } from '@/components/ui/navigation-header';
+import { PricingSection } from '@/components/pricing-section';
+---
+
+<Layout title="Pricing - PeopleFirst">
+  <NavigationHeader client:load />
+  <main>
+    <PricingSection client:load />
+  </main>
+</Layout>

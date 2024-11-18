@@ -1,0 +1,19 @@
+---
+import '@/styles/globals.css';
+import Layout from '../../layouts/Layout.astro';
+import { NavigationHeader } from '@/components/ui/navigation-header';
+import { PerformanceHero } from '@/components/performance/hero';
+import { PerformanceFeatures } from '@/components/performance/features';
+import { ReviewsCycle } from '@/components/performance/reviews-cycle';
+import { Testimonial } from '@/components/performance/testimonial';
+---
+
+<Layout title="Performance Management - PeopleFirst">
+  <NavigationHeader client:load />
+  <main>
+    <PerformanceHero client:load />
+    <PerformanceFeatures client:load />
+    <ReviewsCycle client:load />
+    <Testimonial client:load />
+  </main>
+</Layout>
